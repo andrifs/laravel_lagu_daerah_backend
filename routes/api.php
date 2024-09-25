@@ -15,7 +15,7 @@ Route::get('/lagudaerah', [LaguController::class, 'index']);
 Route::post('/lagudaerah', [LaguController::class, 'create']);
 
 // update Lagu Daerah
-Route::put('/lagudaerah/{id}', [LaguController::class, 'update']);
+Route::post('/lagudaerah/update/{id}', [LaguController::class, 'update']);
 
 // delete Lagu Daerah
 Route::delete('/lagudaerah/{id}', [LaguController::class, 'delete']);
